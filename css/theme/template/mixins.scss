@@ -28,6 +28,16 @@
 	background: radial-gradient( center, $type cover,  $inner 0%, $outer 100% );
 }
 
+@mixin linear-gradient( $outer, $inner ) {
+	background: $outer;
+	background: -moz-linear-gradient( $outer, $inner );
+	background: -webkit-gradient( radial, top, bottom, from($outer), to($inner) );
+	background: -webkit-linear-gradient( $outer, $inner );
+	background: -o-linear-gradient( $outer, $inner );
+	background: -ms-linear-gradient( $outer, $inner );
+	background: linear-gradient( $outer, $inner );
+}
+
 @mixin light-bg-text-color( $color ) {
 	section.has-light-background {
 		&, h1, h2, h3, h4, h5, h6 {

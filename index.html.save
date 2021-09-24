@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>La programmation pour les enfants</title>
+		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/devfest-nantes.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,13 +16,6 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-					<image data-src="./images/devfest_color_text_white.svg"></image>
-					<h4>Et si vous appreniez la programmation à vos enfants ?</h4>
-					<p style="text-align: center">Stéphanie Moallic <a href="http://twitter.com/steffy_29">@steffy_29</a><br/></p>
-				</section>
-
-				<section></section>
 				<section>Slide 1</section>
 				<section>Slide 2</section>
 			</div>
