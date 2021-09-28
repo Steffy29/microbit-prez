@@ -1,12 +1,53 @@
 /**
- * Sky theme for reveal.js.
+ * Based on Sky theme for reveal.js.
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
-@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import url(./fonts/source-sans-pro/source-sans-pro.css);
 .reveal a {
   line-height: 1.3em;
+}
+
+.image-cropper {
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.profil-image {
+  width: 100px !important;
+  height: 100px !important;
+  margin: auto !important;
+  vertical-align: middle !important;
+}
+
+.logos-rs {
+  width: 50px !important;
+  height: 50px !important;
+  margin: auto !important;
+  vertical-align: middle !important;
+}
+
+.logo-ovhcloud {
+  width: 80px !important;
+  height: 80px !important;
+  margin: auto !important;
+  vertical-align: middle !important;
+}
+
+.column-break {
+  column-count: 2;
+}
+
+.duchess {
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 150px;
+  height: 100px;
 }
 
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
@@ -18,12 +59,12 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  *********************************************/
 :root {
   --r-background-color: #f7fbfc;
-  --r-main-font: Open Sans, sans-serif;
+  --r-main-font: Source Sans Pro, Helvetica, sans-serif;
   --r-main-font-size: 40px;
   --r-main-color: #333;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
-  --r-heading-font: Quicksand, sans-serif;
+  --r-heading-font: Source Sans Pro, Helvetica, sans-serif;
   --r-heading-color: #333;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: -0.08em;

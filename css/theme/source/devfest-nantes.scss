@@ -1,5 +1,5 @@
 /**
- * Sky theme for reveal.js.
+ * Based on Sky theme for reveal.js.
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
@@ -7,16 +7,15 @@
 // Default mixins and settings -----------------
 @import "../template/mixins";
 @import "../template/settings";
+
 // ---------------------------------------------
 // Include theme-specific fonts
-@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import url(./fonts/source-sans-pro/source-sans-pro.css);
+
 // Override theme settings (see ../template/settings.scss)
-$mainFont: 'Open Sans',
-sans-serif;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
 $mainColor: #333;
-$headingFont: 'Quicksand',
-sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
 $headingColor: #333;
 $headingLetterSpacing: -0.08em;
 $headingTextShadow: none;
@@ -25,9 +24,52 @@ $backgroundColor: #f7fbfc;
 $linkColor: #3b759e;
 $linkColorHover: lighten( $linkColor, 20%);
 $selectionBackgroundColor: #134674;
+
 // Fix links so they are not cut off
 .reveal a {
     line-height: 1.3em;
+}
+
+.image-cropper {
+    overflow:hidden;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.profil-image {
+    width: 100px !important;
+    height: 100px !important;
+    margin: auto !important;
+    vertical-align: middle !important;
+}
+
+.logos-rs {
+    width: 50px !important;
+    height: 50px !important;
+    margin: auto !important;
+    vertical-align: middle !important;
+}
+
+.logo-ovhcloud {
+    width: 80px !important;
+    height: 80px !important;
+    margin: auto !important;
+    vertical-align: middle !important;
+}
+
+.column-break {
+    column-count: 2;
+}
+
+.duchess {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 150px;
+    height: 100px;
 }
 
 // Background generator
@@ -37,6 +79,7 @@ $selectionBackgroundColor: #134674;
 
 // Change text colors against dark slide backgrounds
 @include dark-bg-text-color(#fff);
+
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
