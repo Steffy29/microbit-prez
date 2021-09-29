@@ -7,15 +7,17 @@
 // Default mixins and settings -----------------
 @import "../template/mixins";
 @import "../template/settings";
-
 // ---------------------------------------------
 // Include theme-specific fonts
 @import url(./fonts/source-sans-pro/source-sans-pro.css);
-
 // Override theme settings (see ../template/settings.scss)
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainFont: 'Source Sans Pro',
+Helvetica,
+sans-serif;
 $mainColor: #333;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro',
+Helvetica,
+sans-serif;
 $headingColor: #333;
 $headingLetterSpacing: -0.08em;
 $headingTextShadow: none;
@@ -24,14 +26,13 @@ $backgroundColor: #f7fbfc;
 $linkColor: #3b759e;
 $linkColorHover: lighten( $linkColor, 20%);
 $selectionBackgroundColor: #134674;
-
 // Fix links so they are not cut off
 .reveal a {
     line-height: 1.3em;
 }
 
 .image-cropper {
-    overflow:hidden;
+    overflow: hidden;
     width: 50px;
     height: 50px;
     -webkit-border-radius: 50%;
@@ -65,7 +66,7 @@ $selectionBackgroundColor: #134674;
 }
 
 .duchess {
-    display: block;
+    display: inline;
     margin-left: auto !important;
     margin-right: auto !important;
     width: 150px;
@@ -79,7 +80,6 @@ $selectionBackgroundColor: #134674;
 
 // Change text colors against dark slide backgrounds
 @include dark-bg-text-color(#fff);
-
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
