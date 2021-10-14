@@ -43,7 +43,7 @@
 }
 
 .duchess {
-  display: block;
+  display: inline;
   margin-left: auto !important;
   margin-right: auto !important;
   width: 150px;
