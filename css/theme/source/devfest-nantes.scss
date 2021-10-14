@@ -11,11 +11,11 @@
 // Include theme-specific fonts
 @import url(./fonts/source-sans-pro/source-sans-pro.css);
 // Override theme settings (see ../template/settings.scss)
-$mainFont: 'Source Sans Pro',
+$mainFont: "Source Sans Pro",
 Helvetica,
 sans-serif;
 $mainColor: #333;
-$headingFont: 'Source Sans Pro',
+$headingFont: "Source Sans Pro",
 Helvetica,
 sans-serif;
 $headingColor: #333;
@@ -24,7 +24,7 @@ $headingTextShadow: none;
 $headingTextTransform: none;
 $backgroundColor: #f7fbfc;
 $linkColor: #3b759e;
-$linkColorHover: lighten( $linkColor, 20%);
+$linkColorHover: lighten($linkColor, 20%);
 $selectionBackgroundColor: #134674;
 // Fix links so they are not cut off
 .reveal a {
@@ -73,9 +73,14 @@ $selectionBackgroundColor: #134674;
     height: 100px;
 }
 
+.robot {
+    list-style: url("../../../images/icons8-robot-16.png");
+}
+
 // Background generator
 @mixin bodyBackground() {
-    @include linear-gradient( #add9e4, #f7fbfc);
+    @include linear-gradient(#add9e4,
+    #f7fbfc);
 }
 
 // Change text colors against dark slide backgrounds
