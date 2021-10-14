@@ -64,6 +64,11 @@
 
             <section data-background-image="./images/devfest_color_text_white.svg" data-background-position="top left" data-background-size="200px">
                 <h2>Comment ?</h2>
+                <section>
+                    <ul class="robot">
+                        <li>test</li>
+                    </ul>
+                </section>
             </section>
 
             <section data-background-image="./images/devfest_color_text_white.svg" data-background-position="top left" data-background-size="200px">
@@ -78,8 +83,7 @@
                 <section>
                     <img data-src="./images/robbyrobot.gif" style="width:500px">
                 </section>
-                <section>
-                    <p>Réalisation</p>
+                <section data-video="my-demo">
                 </section>
             </section>
 
@@ -159,7 +163,16 @@
             hash: true,
 
             // Learn about plugins: https://revealjs.com/plugins/
-            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+
+            dependencies: [{
+                src: './bower_components/reveal-embed-video/reveal-embed-video.js'
+            }],
+
+            'embed-video': {
+                enabled: true, // optional, default false
+                // persistent: false, // optional, default false
+            }
         });
     </script>
 </body>
