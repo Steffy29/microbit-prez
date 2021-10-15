@@ -63,6 +63,7 @@ $selectionBackgroundColor: #134674;
 
 .column-break {
     column-count: 2;
+    text-align: start;
 }
 
 .duchess {
@@ -71,6 +72,21 @@ $selectionBackgroundColor: #134674;
     margin-right: auto !important;
     width: 150px;
     height: 100px;
+}
+
+.prez {
+    display: flex;
+    margin-top: 9%;
+    margin-left: -20%;
+    width: 130%;
+}
+
+.microbit-image {
+    display: flex;
+}
+
+.img-position {
+    object-position: 50% 50%;
 }
 
 .robot {
